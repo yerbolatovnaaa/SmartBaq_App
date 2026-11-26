@@ -1,37 +1,70 @@
-# SmartBaq — Smart Greenhouse Mobile App
+# SMARTBAQ — PROJECT CHARTER
+**Smart Greenhouse Mobile Application**
 
-**SmartBaq** (*"Smart Garden"* in Kazakh) helps suburban dacha families and small-scale greenhouse owners control their greenhouse remotely from any distance, automate watering and climate rules, visually track crop growth by comparing produce size against familiar fruits and berries, and receive a green-screen harvest notification when crops ripen.
+## 1. App Name and Description
 
-## Project Overview
-- **Direction (Track):** Remote Microclimate Monitoring & Irrigation Automation, Smart Crop Growth & Harvest Planning
-- **Target User:** Working families managing a 20–50 m² polycarbonate greenhouse from a distance during the spring-to-autumn growing season (for example, dacha owners near Atyrau).
-- **Planned Tech Stack:** Flutter + Firebase / Supabase
-- **Own Extra Feature:** Visual Crop Size & Growth Comparison Tracker (comparing current crop size to familiar fruits and berries like a pea, cherry, walnut, or ripe produce) + Green-Screen "Ready to Harvest!" Notification upon full ripeness.
+**App Name:** SmartBaq
 
-## Required Modules (M1–M8)
-- **M1 — Login:** Email and password authentication via Firebase/Supabase Auth for authorized family members.
-- **M2 — Dashboard:** Live display of air temperature (°C), air humidity (%), soil moisture (%), and light level (lux).
-- **M3 — Control:** Remote ON/OFF toggles from any distance for drip irrigation pump, exhaust fan, shade curtain, and grow lights.
-- **M4 — Automation:** User-configured `IF–THEN` threshold rules (e.g., *IF soil moisture is below 35%, THEN turn ON watering pump for 10 min*; *IF temp is above 32°C, THEN turn ON fan*).
-- **M5 — Alerts:** Instant warning banners and alert history log when temperature, humidity, or soil moisture crosses critical limits.
-- **M6 — History & Charts:** 24-hour and 7-day line charts tracking temperature, humidity, and soil moisture trends.
-- **M7 — Settings:** Crop-specific min/max threshold configuration, °C/°F unit toggle, and master automation switch.
-- **M8 — No-Internet Mode:** Local caching of latest readings/states with `"Offline — showing last synced data"` banner and queued commands.
+**Description:**
 
-## Team Members & Roles (3 Members)
+SmartBaq helps greenhouse owners monitor plants, control greenhouse conditions, and manage their greenhouses easily using a mobile application.
 
-| Team Member | GitHub Handle | Role | Responsibilities |
-| :--- | :--- | :--- | :--- |
-| **Shakhmetova Aktoty** | `@ashakhmet24` | **Team Lead & Backend/DB** | Project charter, Firebase/Supabase database setup, M4 automation rules, M5 critical alerts |
-| **Yerbolatkyzy Kaussar** | `@yerbolatovnaaa` | **UI/UX Designer & Frontend** | Figma prototype, logo/colors/fonts, M1 login, M2 dashboard, M3 remote device control |
-| **Igilik Korkem** | `@korkemm` | **Frontend, Extra Feature & QA** | M6 charts & history, M7 settings, M8 no-internet mode, Visual Fruit-Size Growth Comparison & green harvest screen, demo video |
+## 2. Target Users
 
-## 6-Week Development Roadmap
-- [x] **Week 1:** Project charter, GitHub repository setup, team roles
-- [ ] **Week 2:** Clickable Figma prototype, logo/colors, system & data diagram
-- [ ] **Week 3:** App navigation skeleton & live cloud database read connection
-- [ ] **Week 4:** M1–M3 (Login, live dashboard, remote device control)
-- [ ] **Week 5:** M4–M8 (Automation rules, alerts, charts, settings, offline mode)
-- [ ] **Week 6:** Visual fruit-size comparison & green harvest notification, APK build, demo video & final defense
-## Repository
-(https://github.com/yerbolatovnaaa/SmartBaq_App.git)`
+Our target users are small greenhouse owners, farmers, and families who grow vegetables in greenhouses. They need to monitor temperature, humidity, soil moisture, and light levels. Sometimes they forget to water their plants or cannot control greenhouse conditions while they are away. SmartBaq helps users monitor their greenhouse, control devices, and save time.
+
+## 3. Our Own Extra Feature — Growth Journey
+
+Our app can track plant growth stages because our users want to monitor plant development and know when their crops are ready to harvest.
+
+Growth Journey includes:
+- Seed stage
+- Seedling stage
+- Flowering stage
+- Harvest stage
+
+Users can also save plant photos and notes in Growth Diary to track their plants over time.
+
+## 4. Project Direction (Track)
+
+**Selected direction:** [Choose 1–2 tracks from Section 4 of the project brief.]
+
+## 5. Feature List (M1–M8)
+
+SmartBaq will include the following eight required modules:
+
+- **M1 — Login and Registration:** Users can create an account and securely log in.
+- **M2 — Dashboard:** Users can view current temperature, humidity, soil moisture, and light levels.
+- **M3 — Device Control:** Users can turn the water pump, fan, grow light, and shade on or off.
+- **M4 — Automation:** Users can create automatic rules for watering and greenhouse conditions.
+- **M5 — Alerts:** The app sends notifications about low soil moisture, temperature changes, and other important events.
+- **M6 — History and Charts:** Users can view previous sensor readings and monitor changes over time.
+- **M7 — Settings:** Users can change temperature units, thresholds, notifications, and application preferences.
+- **M8 — Offline Mode:** Users can access previously saved information when the internet connection is unavailable.
+
+## 6. Technology Stack
+
+- **Figma:** UI/UX design and mobile app prototype.
+- **Flutter:** Mobile application development.
+- **Dart:** Programming language.
+- **Firebase or Supabase:** Cloud database and authentication.
+- **GitHub:** Code storage and team collaboration.
+
+The application will use test greenhouse data stored in a cloud database. No physical greenhouse hardware is required.
+
+## 7. Team Setup
+
+**GitHub Repository:** [Insert repository link]
+
+| Team Member | Role | Responsibility |
+|---|---|---|
+| Aktoty | Team Leader / Designer | Project management and UI/UX design |
+| Kaussar | Frontend Developer | Flutter screens and app interface |
+| Korkem | Backend Developer | Database and authentication |
+
+All team members will be added to the GitHub repository. The README file will contain their names and responsibilities.
+## 8. Project Goal
+
+Our main goal is to create a simple and useful smart greenhouse mobile application. SmartBaq will help users monitor greenhouse conditions, control devices, receive alerts, and track plant growth.
+
+**Project Motto:** Grow smarter. Live greener.
